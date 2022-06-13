@@ -1,0 +1,164 @@
+@import url(/PORTAFOLIO/assets/fuentes/Rubik-Bold.ttf);
+.rotate {
+  -webkit-animation: rotation 4s infinite linear;
+          animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg);
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+  }
+  body {
+    background-color: #f3fbff;
+    font-family: "Rubik";
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  body.dark {
+    background-image: url(../assets/gifs/matrix.gif);
+  }
+  nav {
+    position: relative;
+    background-color: #96E7F5;
+    opacity: .8;
+    width: auto;
+  }
+  .logoLeft {
+    text-align: center;
+  }
+  .logoLeft img {
+    position: relative;
+    width: 15%;
+    margin-top: 10px;
+  }
+  .switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    margin-left: 300px;
+    margin-top: -34px;
+  }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0t;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  .switch span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    background: none;
+    color: #ffffff;
+  }
+  .barsMenu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+  }
+  .barsMenu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #acabab;
+    margin-top: 6px;
+    -webkit-transform-origin: 0px 100%;
+            transform-origin: 0px 100%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+  }
+  .activeline1BMenu {
+    -webkit-transform: rotate(45deg) translate(-2px, 1px);
+            transform: rotate(45deg) translate(-2px, 1px);
+  }
+  .activeline2BMenu {
+    -webkit-transform: rotate(-45deg) translate(-2px, 1px);
+            transform: rotate(-45deg) translate(-2px, 1px);
+  }
+  .activeline3BMenu {
+    -webkit-transform: rotate(-45deg) translate(-2px, 1px);
+            transform: rotate(-45deg) translate(-2px, 1px);
+  }
+  aside {
+    background: #acabab;
+    opacity: .8;
+    border-radius: 5px;
+    width: 150px;
+    position: absolute;
+    overflow-y: hidden;
+    left: -150px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .aside:hover {
+    overflow-y: auto;
+  }
+  .desplegar {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .option {
+    padding: 1px;
+    color: #222222;
+  }
+  .option li {
+    margin-left: 15px;
+    list-style: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

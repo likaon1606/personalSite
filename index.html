@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/cee95fb2c3.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+<!-------------------------------THE MENU--------------------------------------------------------->  
+  <nav>
+    <div class="logoLeft">
+      <img class="rotate" src="./assets/Portafolio 3/Logos-Imágenes/logo html-css-js.png" alt="" />
+    </div>
+<!------------------------------button dark mode----------------------------------->
+    <div>
+      <button class="switch" id="switch">
+        <span><i class="fa-solid fa-sun"></i></span>
+        <span><i class="fa-solid fa-moon"></i></span>
+      </button>
+    </div>
+    <div class="barsMenu" id="barsMenu">
+      <span class="line1BMenu"></span>
+      <span class="line2BMenu"></span>
+      <span class="line3BMenu"></span>
+    </div>  
+    </nav>
+<!----------------------------------LATERAL MENU------------------------->    
+    <aside id="aside">
+        <ul>
+          <a href="#Services" class="option"><li>Servicios</li></a>
+          <a href="#section-midle" class="option"><li>Acerca de mí</li></a>
+          <a href="#Habilidades" class="option"><li>Mis habilidades</li></a>
+          <a href="#mi-portafolio" class="option"><li>Mi portafolio</li></a>
+        </ul>  
+    </aside> 
+<!-- 
+    <section>
+    
+      <img class="picture" src="./assets/Portafolio 3/Logos-Imágenes/afg1.png" alt="" />
+      <aside id="mis-datos">
+        <p><span>Hola, soy Ariel</span></p>
+        <p id="segundop">UX/UI Designer</p>
+        <div class="iconos">
+          <a
+            href="https://www.linkedin.com/in/ariel-f-78604898/"
+            target="_blank"
+            class="nav-logos"
+            ><img src="./assets/Portafolio 3/Íconos/cib_linkedin-in.svg" alt=""
+          /></a>
+          <a
+            href="https://github.com/likaon1606"
+            target="_blank"
+            class="nav-logos"
+            ><img src="./assets/Portafolio 3/Íconos/icons8-github.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/aquiles.griego.1"
+            target="_blank"
+            class="nav-logos"
+            ><img
+              src="./assets/Portafolio 3/Íconos/icons8-facebook-nuevo.svg"
+              alt=""
+          /></a>
+        </div>
+        
+        <div class="downloadCv">
+          <a href="https://drive.google.com/file/d/1KvsT22VKvNpQflr_Tnf_I8a3FAu2Ngq9/view?usp=sharing" 
+          download target="_blank">
+            <i class="fa-solid fa-download"></i> 
+            CV en Español</a>
+          <a href="https://drive.google.com/file/d/1B4O1YfQ8WBnRFHtbEkNwiBjnpPOH9I5N/view?usp=sharing" 
+          download target="_blank">
+            <i class="fa-solid fa-download"></i> 
+            CV en Inglés</a>
+        </div>
+
+        <div id="mail">
+          <p class="contactme">Contáctame</p>
+          <img src="./assets/Portafolio 3/Íconos/mail 3.svg" alt=""/>
+          <a href="mailto:ariel.fuentesgarcia@gmail.com">
+            <p class="contact">ariel.fuentesgarcia@gmail.com</p>
+          </a>
+          <img src="./assets/Portafolio 3/Íconos/phone 3.svg"/>
+          <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank" >
+            <p class="contact">55 3260 4568</p>
+          </a>
+        </div>
+      </aside>
+    </section>
+    <div id="Services">
+      <h1>SERVICIOS</h1>
+    
+    </div>
+
+    <section class="section-2">
+      <div>
+        <img
+          src="./assets/Portafolio 3/Íconos/iconoir_design-pencil.svg"
+          alt=""
+        />
+        <h1>UX/UI Desing</h1>
+        <p>Desde el diseño de interfaz de usuario hasta la experiencia de uso.</p>
+      </div>
+      <div>
+        <img src="./assets/Portafolio 3/Íconos/feather_search.svg" alt="" />
+        <h1>Research</h1>
+        <p>Mejora de aplicaciones y detección de errores en apps.</p>
+      </div>
+      <div>
+        <img
+          src="./assets/Portafolio 3/Íconos/majesticons_speakerphone-line.svg"
+          alt=""
+        />
+        <h1>Marketing</h1>
+        <p>Implementación de marketing digital.</p>
+      </div>
+      <div>
+        <img
+          src="./assets/Portafolio 3/Íconos/ic_outline-web-asset.svg"
+          alt=">"
+        />
+        <h1>Web Desing</h1>
+        <p>Diseño de sitios web y aplicaiones web.</p>
+      </div>
+    </section>
+
+    <section id="section-midle">
+      <h1>ACERCA DE MÍ</h1>
+      <p>
+        Soy un profesional proactivo, entregado al aprendizaje. 
+        En colaboracion con profesionales Colombianos, hemos creaado 
+        aplicaciones basadas en tecnologías de React.js, Javascript, 
+        HTML, CSS, SASS y NODE.js. Actualmente me dedico al desarrollo 
+        de aplicaciones de manera individual  y en equipo, dentro de ACADEMLO. 
+        Gusto de aprender de manera autodidacta y estoy en busca de retos profesionales, 
+        en el mundo de la programación.
+      </p>
+      <img src="./assets/Portafolio 3/Logos-Imágenes/nodejs.png" alt="" />
+    </section>
+
+    <section id="estudios">
+      <div class="studies">
+        <img src="./assets/Portafolio 3/Logos-Imágenes/UNADM.png" alt="" />
+        <h3>UNADM</h3>
+        <p>2021-ACTUAL</p>
+
+        <img src="./assets/Portafolio 3/Logos-Imágenes/CECATI.png" alt="" />
+        <h3>CECATI 107</h3>
+        <p>2006-2007</p>
+
+        <img
+          src="./assets/Portafolio 3/Logos-Imágenes/logo_academlo 5.png"
+          alt=""
+        />
+        <h3>Academlo</h3>
+        <p>2022-2023</p>
+      </div>
+    </section>
+
+    <article id="Habilidades">
+      <h1>MIS HABILIDADES</h1>
+      <div>
+        <progress value="90" max="100"></progress>
+        <h2 class="porcentaje">90%</h2>
+        <p>Javascript</p>
+      </div>
+      <div>
+        <progress value="90" max="100"></progress>
+        <h2 class="porcentaje">90%</h2>
+        <p>React.js</p>
+      </div>
+      <div>
+        <progress value="75" max="100"></progress>
+        <h2 class="porcentaje">75%</h2>
+        <p>Node.js</p>
+      </div>
+      <div>
+        <progress value="95" max="100"></progress>
+        <h2 class="porcentaje">95%</h2>
+        <p>HTML y CSS</p>
+      </div>
+      <div>
+        <progress value="60" max="100"></progress>
+        <h2 class="porcentaje">60%</h2>
+        <p>C++</p>
+      </div>
+      <div>
+        <progress value="90" max="100"></progress>
+        <h2 class="porcentaje">90%</h2>
+        <p>Git</p>
+      </div>
+    </article>
+
+    <section id="mi-portafolio">
+      <h1>MI PORTAFOLIO</h1>
+      <div>
+        <a href="https://visionary-kashata-ac233b.netlify.app/" target="_blank"
+          ><img
+            class="nav-projects"
+            src="./assets/Portafolio 3/Logos-Imágenes/Formulario.jpg"
+            alt=""
+          />
+        </a>
+        <p>Form CRUDS</p>
+      </div>
+      <div>
+        <a href="https://cute-starlight-f947f8.netlify.app" target="_blank"
+          ><img
+            class="nav-projects"
+            src="./assets/Portafolio 3/Logos-Imágenes/POKEAPI.png"
+            alt=""
+          />
+        </a>
+        <p>Search Pokemons App</p>
+      </div>
+      <div>
+        <a href="https://creative-cucurucho-b7a1d7.netlify.app/" target="_blank"
+          ><img
+            class="nav-projects"
+            src="./assets/Portafolio 3/Logos-Imágenes/RICK AND MORTY.jpg"
+            alt=""
+          />
+        </a>
+        <p>Rick and Morty App</p>
+      </div>
+      <div>
+        <a href="https://lacasadelestanque.net/" target="_blank"
+          ><img
+            class="nav-projects"
+            src="./assets/Portafolio 3/Logos-Imágenes/la casa.jpg"
+            alt=""
+          />
+        </a>
+        <p>The pond house</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho con HTML, CSS, SASS y Javascript</p>
+    </footer> -->
+
+    <script src="./JS/main.js"></script>
+
+  </body>
+</html>
