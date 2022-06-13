@@ -21,7 +21,7 @@ $ligtBlue: #96E7F5;
         }
       }
       
-@media only screen and (min-width: 360px) and (max-width: 374px) {
+@media only screen and (min-width: 340px) and (max-width: 359px) {
 
   * {
     margin: 0;
@@ -43,7 +43,7 @@ nav{
   position: relative;
   background-color: $ligtBlue;
   opacity: .8;
-  width: auto;
+  width: 100% ;
 }  
 //-----------LOGO LEFT ROTATE-----------
 .logoLeft{
@@ -65,8 +65,8 @@ text-align: center;
   cursor: pointer;
   display: flex;
   outline: none;
-  margin-left: 300px;
-  margin-top: -34px;  
+  margin-left: 293px;
+  margin-top: -30px;  
   &::after {
     content: "";
     display: block;
@@ -104,8 +104,8 @@ text-align: center;
   width: 30px;
   height: 30px;
   position: absolute;
-  top: -10%;
-  left: 10%;
+  top: -20%;
+  left: 7%;
   transform: translate(-50%, 50%);
 }
 .barsMenu span{
@@ -122,17 +122,17 @@ text-align: center;
   translate(-2px, 1px);  
 }
 .activeline2BMenu{
-  transform: rotate(-45deg)
-  translate(-2px, 1px);
+  transform: rotate(45deg)
+  translate(-8px, -4px);
 }
 .activeline3BMenu{
   transform: rotate(-45deg)
-  translate(-2px, 1px);
+  translate(-2px, 2px);
 }
 //-------------------DROPDOWN MENU---------------------------------------------------
 aside{
   background: $lightGrayHover;
-  opacity: .8;
+  opacity: .4;
   border-radius: 5px;
   width: 150px;
   position: absolute;
@@ -156,6 +156,14 @@ aside{
 }
 
 
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+}
+@media only screen and (min-width: 375px) and (max-width: 719px) {
+}
+@media only screen and (min-width: 720px) and (max-width: 1308px) {
+}
+
+//---------------------------DESKTOP-----------------------------
 
 
 }

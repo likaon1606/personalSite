@@ -26,7 +26,7 @@
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 374px) {
+@media only screen and (min-width: 340px) and (max-width: 359px) {
   * {
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@
     position: relative;
     background-color: #96E7F5;
     opacity: .8;
-    width: auto;
+    width: 100%;
   }
   .logoLeft {
     text-align: center;
@@ -67,8 +67,8 @@
     display: -ms-flexbox;
     display: flex;
     outline: none;
-    margin-left: 300px;
-    margin-top: -34px;
+    margin-left: 293px;
+    margin-top: -30px;
   }
   .switch::after {
     content: "";
@@ -106,8 +106,8 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: -10%;
-    left: 10%;
+    top: -20%;
+    left: 7%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
   }
@@ -127,16 +127,16 @@
             transform: rotate(45deg) translate(-2px, 1px);
   }
   .activeline2BMenu {
-    -webkit-transform: rotate(-45deg) translate(-2px, 1px);
-            transform: rotate(-45deg) translate(-2px, 1px);
+    -webkit-transform: rotate(45deg) translate(-8px, -4px);
+            transform: rotate(45deg) translate(-8px, -4px);
   }
   .activeline3BMenu {
-    -webkit-transform: rotate(-45deg) translate(-2px, 1px);
-            transform: rotate(-45deg) translate(-2px, 1px);
+    -webkit-transform: rotate(-45deg) translate(-2px, 2px);
+            transform: rotate(-45deg) translate(-2px, 2px);
   }
   aside {
     background: #acabab;
-    opacity: .8;
+    opacity: .4;
     border-radius: 5px;
     width: 150px;
     position: absolute;
