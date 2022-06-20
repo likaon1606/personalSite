@@ -26,3 +26,23 @@ const $openClose = document.getElementById('barsMenu');
 $openClose.addEventListener('click', () => {
     aside.classList.toggle('desplegar')
 });
+
+// TYPEWRITER
+// let text = document.getElementById('typewriter');
+// let str = text.innerHTML;
+
+// text.innerHTML = '';
+
+// let speed = 40;
+// let i = 0;
+
+// //efect typewriter
+// function typeWriter() {
+//     if ( i < str.length ) {
+//         text.innerHTML += str.charAt(i);
+//         i++;
+//         setTimeout( typeWriter, speed );
+//     }
+// }
+
+// setTimeout( typeWriter, speed );

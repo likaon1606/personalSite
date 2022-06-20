@@ -3,159 +3,388 @@
 $darkGray: #222222;
 $lightGray: #c8c8c8;
 $lightGrayHover: #acabab;
-$strongBlue: #3e60e9;
-$blueHover: #254be6;
-$ligtBlue: #96E7F5;
-
+$blue0: #dff6ff;
+$blue1: #96e7f5;
+$blue2: #47b5ff;
+$blue3: #1363df;
+$blue4: #06283d;
 
 //-------------ROTATE---------------------
 .rotate {
-  animation: rotation 4s infinite linear;
+  animation: rotation 15s infinite linear;
 }
 @keyframes rotation {
-    from {
-        transform: rotateY(0deg);
-      }
-      to {
-          transform: rotateY(359deg);
-        }
-      }
-      
-@media only screen and (min-width: 340px) and (max-width: 359px) {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
 
+@media only screen and (min-width: 340px) and (max-width: 359px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
   }
-  
+
   body {
     background-color: #f3fbff;
     font-family: "Rubik";
-    transition: .3s ease all;
-    &.dark{
+    transition: 0.3s ease all;
+    &.dark {
       background-image: url(../assets/gifs/matrix.gif);
     }
   }
 
-nav{
-  position: relative;
-  background-color: $ligtBlue;
-  opacity: .8;
-  width: 100% ;
-}  
-//-----------LOGO LEFT ROTATE-----------
-.logoLeft{
-text-align: center;
-& img {
-  position: relative;
-  width: 15%;
-  margin-top: 10px;
-}
-}
-
-//------------BUTTON DARK MODE--------------
-
-.switch {
-  background: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  position: absolute;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-  margin-left: 293px;
-  margin-top: -30px;  
-  &::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background: #f1f1f1;
-    top: 0;
-    left: 0t;
-    right: unset;
-    border-radius: 100px;
-    transition: 0.3s ease all;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  nav {
+    position: relative;
+    background-color: $blue1;
+    opacity: 0.8;
+    width: 100%;
   }
-  &.active{
-    background: orange;
-    color:  #000;
-    &::after{
-        right: 0;
-        left: unset;
+  //-----------LOGO LEFT ROTATE-----------
+  .logoLeft {
+    text-align: center;
+    & img {
+      position: relative;
+      width: 15%;
+      margin-top: 10px;
     }
   }
-  span {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+
+  //------------BUTTON DARK MODE--------------
+
+  .switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-left: 293px;
+    margin-top: -30px;
+    &::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background: #f1f1f1;
+      top: 0;
+      left: 0t;
+      right: unset;
+      border-radius: 100px;
+      transition: 0.3s ease all;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+      background: orange;
+      color: #000;
+      &::after {
+        right: 0;
+        left: unset;
+      }
+    }
+    span {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      display: block;
+      background: none;
+      color: #ffffff;
+    }
+  }
+
+  // CREATE BARS TO MENU
+  .barsMenu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20%;
+    left: 7%;
+    transform: translate(-50%, 50%);
+  }
+  .barsMenu span {
     display: block;
-    background: none;
-    color: #ffffff;
+    width: 100%;
+    height: 2px;
+    background: $lightGrayHover;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  }
+  .activeline1BMenu {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+  .activeline2BMenu {
+    transform: rotate(45deg) translate(-8px, -4px);
+  }
+  .activeline3BMenu {
+    transform: rotate(-45deg) translate(-2px, 2px);
+  }
+  //-------------------DROPDOWN MENU---------------------------------------------------
+  aside {
+    background: $blue0;
+    border-radius: 5px;
+    width: 150px;
+    position: absolute;
+    overflow-y: hidden;
+    left: -150px;
+    transition: 0.5s;
+  }
+  .aside:hover {
+    overflow-y: auto;
+  }
+  .desplegar {
+    transform: translateX(100%);
+  }
+  .option {
+    padding: 0.1px;
+    color: black;
+    & li {
+      margin: -5px;
+      margin-left: 15px;
+      list-style: none;
+      font-weight: 900;
+    }
+  }
+
+  //---------------------ABOUT ME-----------------------------
+  .node {
+    text-align: center;
+    margin-top: 20px;
+    & img {
+      width: 30%;
+    }
+  }
+  .view {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 6%;
+    margin-left: 5%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../assets/gifs/estrellas.gif) no-repeat center center;
+  }
+  .view .mask,
+  .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .view img {
+    display: block;
+    position: relative;
+  }
+  .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+  }
+  .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+  }
+  .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+  }
+  .view a.info:hover {
+    box-shadow: 0 0 5px #000;
+  }
+  //---------------------EFECT ABOUT ME---------------------------------------
+  .view img {
+    transition: all 0.5s ease-out;
+    opacity: 1;
+  }
+  .view .mask {
+    background-color: rgba(77, 44, 35, 0.5);
+    transform: rotate(0deg) scale(1);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateY(-200px) rotate(180deg);
+  }
+  .view h2 {
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+  }
+  .view p {
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+  }
+  .view a.info {
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+  }
+  //--------------------------EFECT HOVER ABOUT ME----------------------
+  .view:hover img {
+    transform: rotate(720deg) scale(0);
+    opacity: 0;
+  }
+  .view:hover .mask {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg);
+    transition-delay: 0.4s;
+  }
+  .view:hover h2 {
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+  }
+  .view:hover p {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+  }
+  .view:hover a.info {
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+  }
+  .aboutMe {
+    margin-top: 10px;
+    text-align: center;
+    & h1 {
+      color: $blue3;
+    }
+    & p {
+      text-align: justify;
+      margin: 10px;
+    }
+  }
+
+  //---------------------------------ICONS---------------------------------------------
+
+  .icons {
+    text-align: center;
+    & img {
+      width: 10%;
+      border: 1px solid $blue2;
+      border-radius: 95%;
+      margin: 20px;
+    }
+  }
+
+  //--------------------------------SKILLS-----------------------------------------------
+
+  .titleSkills {
+    margin-top: 30px;
+    text-align: center;
+    color: $blue3;
+  }
+  .skills {
+    margin-top: 15px;
+    text-align: center;
+    column-count: 2;
+    column-gap: 20px;
+    background: #000;
+    & h3 {
+      letter-spacing: 0;
+      padding: 0.25em 0 0.325em;
+      display: block;
+      margin: 0 auto;
+      text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+      // Clip Background Image
+      background: url(../assets/gifs/img/fondotext.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+      //Animate Background Image
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: aitf 80s linear infinite;
+      //Activate hardware acceleration for smoother animations
+      -webkit-transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+    }
+  }
+  // Animate Background Image
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+//------------------------------------------WORKS------------------------------------------------
+
+.briefcaf {
+  text-align: center;
+  margin-top: 30px;
+  color: $blue3;
+}
+#containerCub {
+  perspective: 800px;
+  margin: 10px;
+  width: 200px;
+  margin-top: 50px;
+}
+#cub {
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  // transform: rotateY(45deg);
+  margin-left: 35%;
+  & p {
+    visibility: hidden;
   }
 }
-
-// CREATE BARS TO MENU
-.barsMenu{
-  width: 30px;
-  height: 30px;
+.face {
   position: absolute;
-  top: -20%;
-  left: 7%;
-  transform: translate(-50%, 50%);
-}
-.barsMenu span{
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: $lightGrayHover;
-  margin-top: 6px;
-  transform-origin: 0px 100%;
-  transition: all 300ms;
-}
-.activeline1BMenu{
-  transform: rotate(45deg)
-  translate(-2px, 1px);  
-}
-.activeline2BMenu{
-  transform: rotate(45deg)
-  translate(-8px, -4px);
-}
-.activeline3BMenu{
-  transform: rotate(-45deg)
-  translate(-2px, 2px);
-}
-//-------------------DROPDOWN MENU---------------------------------------------------
-aside{
-  background: $lightGrayHover;
-  opacity: .4;
-  border-radius: 5px;
-  width: 150px;
-  position: absolute;
-  overflow-y: hidden;
-  left: -150px;
-  transition: 0.5s;
-}
-.aside:hover{
-  overflow-y: auto;
-}
-.desplegar{
-  transform: translateX(100%);
-}
-.option{
-  padding: 1px;
-  color: $darkGray;
-  & li{
-    margin-left: 15px;
-    list-style: none;
+  & img {
+    width: 100px;
+    height: 100px;
   }
 }
+//FORM
+.front {
+  transform: translateZ(50px); 
+}
+//POKEAPI
+.back {
+  transform: translateZ(-50px); 
+}
+//RICK AND MORTY
+.left {
+  transform: translateX(-50px) rotateY(90deg);
+}
+// POND HOUSE
+.right {
+  transform: translateX(79px) rotateY(90deg);
+
+}
 
 
+
+
+
+
+
+
+}
 @media only screen and (min-width: 360px) and (max-width: 374px) {
 }
 @media only screen and (min-width: 375px) and (max-width: 719px) {
@@ -164,6 +393,3 @@ aside{
 }
 
 //---------------------------DESKTOP-----------------------------
-
-
-}
