@@ -136,11 +136,11 @@
   }
   aside {
     background: #dff6ff;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 150px;
     position: absolute;
     overflow-y: hidden;
-    left: -150px;
+    left: -160px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -152,14 +152,31 @@
             transform: translateX(100%);
   }
   .option {
-    padding: 0.1px;
+    padding: 1px;
     color: black;
   }
   .option li {
-    margin: -5px;
+    padding: 3px;
+    margin-top: -12px;
     margin-left: 15px;
     list-style: none;
     font-weight: 900;
+  }
+  .window-pop-up {
+    background: #06283d;
+    border-radius: 10PX;
+    padding: 10PX;
+    position: absolute;
+    margin-left: 43%;
+    margin-right: 5%;
+    display: none;
+  }
+  .window-pop-up ul {
+    list-style: none;
+    color: #dff6ff;
+  }
+  #close img {
+    width: 10%;
   }
   .node {
     text-align: center;
@@ -175,8 +192,8 @@
     width: 300px;
     height: 200px;
     margin: 10px;
-    margin-top: 6%;
-    margin-left: 5%;
+    margin-left: 6%;
+    margin-top: 10%;
     border: 10px solid #fff;
     overflow: hidden;
     position: relative;
@@ -326,6 +343,7 @@
     -webkit-column-gap: 20px;
             column-gap: 20px;
     background: #000;
+    border-radius: 10px;
   }
   .skills h3 {
     letter-spacing: 0;
@@ -357,7 +375,6 @@
   #containerCub {
     -webkit-perspective: 800px;
             perspective: 800px;
-    margin: 10px;
     width: 200px;
     margin-top: 50px;
   }
@@ -377,6 +394,8 @@
   .face img {
     width: 100px;
     height: 100px;
+    -webkit-box-shadow: 3px 3px 5px 2px #acabab;
+            box-shadow: 3px 3px 5px 2px #acabab;
   }
   .front {
     -webkit-transform: translateZ(50px);
@@ -393,6 +412,68 @@
   .right {
     -webkit-transform: translateX(79px) rotateY(90deg);
             transform: translateX(79px) rotateY(90deg);
+  }
+  .container-form {
+    margin-top: -12%;
+    text-align: center;
+  }
+  .container-form h1 {
+    color: #1363df;
+  }
+  .form {
+    margin-top: 40px;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    background: #47b5ff;
+    border-radius: 10px;
+  }
+  .form h3 {
+    padding: 10px;
+  }
+  .form label {
+    display: block;
+    position: relative;
+    text-align: start;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .form input {
+    position: relative;
+    margin-left: -5px;
+    padding: 5px;
+    width: 90%;
+  }
+  .form textarea {
+    margin: 5px;
+    width: 92%;
+  }
+  .form .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin-left: 120px;
+    background: #06283d;
+    color: #1363df;
+    width: 24%;
+    height: 10%;
+    padding: 5px;
+    font-size: 130%;
+    font-weight: 600;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  footer p {
+    color: #06283d;
+    font-weight: 900;
+    text-shadow: -5px -8px 2px #47b5ff;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -43,45 +43,54 @@
     <!----------------------------------LATERAL MENU------------------------->
     <aside id="aside">
       <ul>
-        <a href="#Services" class="option"><li>Servicios mios</li></a>
-        <a href="#section-midle" class="option"><li>Acerca de mí</li></a>
-        <a href="#Habilidades" class="option"><li>Mis habilidades</li></a>
-        <a href="#mi-portafolio" class="option"><li>Mi portafolio</li></a>
+        <a href="javascript:open()" class="option" id="open"><li>Servicios</li></a>
+        <a href="#skills" class="option"><li>Mis habilidades</li></a>
+        <a href="#cub" class="option"><li>Mi portafolio</li></a>
       </ul>
     </aside>
 
-<!----------------------------LOGO NODEJS--------------------------------------------->
+    <!-----------------------------POP-UP WINDOWS--------------------------------------------------->
+
+    <article class="window-pop-up" id="window">
+      <div id="close"><a href="javascript:close()"><img src="./assets/gifs/icons/cancelar.png"/></a></div>
+      <ul>
+        <li>Diseño de interfaces</li>
+        <li>Aplicaciones web</li>
+        <li>Formularios (Crud)</li>
+        <li>Páginas interactivas</li>
+      </ul>
+    </article>
+
+    <!----------------------------LOGO NODEJS--------------------------------------------->
 
     <div class="node">
       <img src="./assets/Portafolio 3/Logos-Imágenes/nodejs.png" alt="" />
     </div>
 
     <!-----------------------------ABOUT ME------------------------------------->
-    
+
     <div class="view">
       <img src="./assets/gifs/img/afg1.png" />
       <div class="mask">
-        <h2>¡Hola! Soy Ariel F. G.</h2>
-        <p>Desarrolladro Full Stack</p>
+        <h2>¡Hola!, Soy Ariel F. G.</h2>
+        <p>Desarrollador Full Stack</p>
         <a href="#" class="info">Contáctame</a>
       </div>
     </div>
 
-<!---------------------------------------ICONS--------------------------------------------------------->
+    <!---------------------------------------ICONS--------------------------------------------------------->
 
-<div class="icons">
-  <a
-    href="https://www.linkedin.com/in/ariel-f-78604898/"
-    target="_blank"
-    ><img src="./assets/Portafolio 3/Íconos/cib_linkedin-in.svg" alt=""
-  /></a>
-  <a
-    href="https://github.com/likaon1606"
-    target="_blank"
-    ><img src="./assets/Portafolio 3/Íconos/icons8-github.svg" alt=""
-  /></a>
-  <a href="./docs/CV ARIEL FUENTES GARCÍA.pdf" download ><img src="./assets/gifs/icons/cv.png"/></a>
-</div>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/ariel-f-78604898/" target="_blank"
+        ><img src="./assets/Portafolio 3/Íconos/cib_linkedin-in.svg" alt=""
+      /></a>
+      <a href="https://github.com/likaon1606" target="_blank"
+        ><img src="./assets/Portafolio 3/Íconos/icons8-github.svg" alt=""
+      /></a>
+      <a href="./docs/CV ARIEL FUENTES GARCÍA.pdf" download
+        ><img src="./assets/gifs/icons/cv.png"
+      /></a>
+    </div>
 
     <section class="aboutMe">
       <h1>ACERCA DE MÍ</h1>
@@ -95,140 +104,101 @@
       </p>
     </section>
 
-<!------------------------------SKILLS-------------------------------------------------------------->
+    <!------------------------------SKILLS-------------------------------------------------------------->
 
-<article>
-  <h1 class="titleSkills">MIS HABILIDADES</h1>
-  <div class="skills">
-    <h3>HTML</h3>
-    <h3>CSS</h3>
-    <h3>Javascript</h3>
-    <h3>React.js</h3>
-    <h3>node.js</h3>
-    <h3>C++</h3>
-    <h3>BD relacionales</h3>
-    <h3>Git</h3>
-    <h3>Heroku</h3>
-    <h3>Postman</h3>
-    <h3>PostgreSQL</h3>
-    <h3>API REST</h3>
-  </div>
-</article>
+    <article>
+      <h1 class="titleSkills">MIS HABILIDADES</h1>
+      <div class="skills" id="skills">
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>Javascript</h3>
+        <h3>React.js</h3>
+        <h3>node.js</h3>
+        <h3>C++</h3>
+        <h3>BD relacionales</h3>
+        <h3>Git</h3>
+        <h3>Heroku</h3>
+        <h3>Postman</h3>
+        <h3>PostgreSQL</h3>
+        <h3>API REST</h3>
+      </div>
+    </article>
 
-<!-------------------------------------------WORKS---------------------------------------------------------------->
+    <!-------------------------------------------WORKS---------------------------------------------------------------->
 
-<section class="briefcaf">
-  <h1>ALGO DE MI TRABAJO</h1>
-<div id="containerCub">
-<div id="cub" class="rotate">
- <div class="face front">
-  <a href="https://visionary-kashata-ac233b.netlify.app/" target="_blank">
-    <img src="./assets/Portafolio 3/Logos-Imágenes/Formulario.jpg" alt="form"/>
-    <p>Formulario para crear, modificar y eliminar registros</p>
-  </a>
- </div>
-  <div class="face back">
-    <a href="https://cute-starlight-f947f8.netlify.app" target="_blank">
-      <img src="./assets/Portafolio 3/Logos-Imágenes/POKEAPI.jpg " alt="POKEAPI"/>
-      <p>Buscador de pokemones por nombre, filtrado por tipo y tarjeta individual</p>
-    </a>
-  </div>
-  <div class="face left">
-    <a href="https://creative-cucurucho-b7a1d7.netlify.app/" target="_blank">
-      <img src="./assets/Portafolio 3/Logos-Imágenes/RICK AND MORTY.jpg" alt="Rick and Morty"/>
-    </a>
-    <p>Buscador de personajes por id</p>
-  </div>
-  <div class="face right">
-    <a href="https://lacasadelestanque.net/" target="_blank">
-      <img src="./assets/Portafolio 3/Logos-Imágenes/la casa.jpg"alt="pagina sencilla"/>
-    </a>
-    <p>Página sencilla real</p>
-  </div>
-</div>
-</div>
-</section>
-    <!-- 
-
-        <div id="mail">
-          <p class="contactme">Contáctame</p>
-          <img src="./assets/Portafolio 3/Íconos/mail 3.svg" alt=""/>
-          <a href="mailto:ariel.fuentesgarcia@gmail.com">
-            <p class="contact">ariel.fuentesgarcia@gmail.com</p>
-          </a>
-          <img src="./assets/Portafolio 3/Íconos/phone 3.svg"/>
-          <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank" >
-            <p class="contact">55 3260 4568</p>
-          </a>
+    <section class="briefcaf">
+      <h1>ALGO DE MI TRABAJO</h1>
+      <div id="containerCub">
+        <div id="cub" class="rotate">
+          <div class="face front">
+            <a
+              href="https://visionary-kashata-ac233b.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="./assets/Portafolio 3/Logos-Imágenes/Formulario.jpg"
+                alt="form"
+              />
+              <p>Formulario para crear, modificar y eliminar registros</p>
+            </a>
+          </div>
+          <div class="face back">
+            <a href="https://cute-starlight-f947f8.netlify.app" target="_blank">
+              <img
+                src="./assets/Portafolio 3/Logos-Imágenes/POKEAPI.jpg "
+                alt="POKEAPI"
+              />
+              <p>
+                Buscador de pokemones por nombre, filtrado por tipo y tarjeta
+                individual
+              </p>
+            </a>
+          </div>
+          <div class="face left">
+            <a
+              href="https://creative-cucurucho-b7a1d7.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="./assets/Portafolio 3/Logos-Imágenes/RICK AND MORTY.jpg"
+                alt="Rick and Morty"
+              />
+            </a>
+            <p>Buscador de personajes por id</p>
+          </div>
+          <div class="face right">
+            <a href="https://lacasadelestanque.net/" target="_blank">
+              <img
+                src="./assets/Portafolio 3/Logos-Imágenes/la casa.jpg"
+                alt="pagina sencilla"
+              />
+            </a>
+            <p>Página sencilla real</p>
+          </div>
         </div>
-      </aside>
-    </section>
-    <div id="Services">
-      <h1>SERVICIOS</h1>
-    
-    </div>
-
-    <section class="section-2">
-      <div>
-        <img
-          src="./assets/Portafolio 3/Íconos/iconoir_design-pencil.svg"
-          alt=""
-        />
-        <h1>UX/UI Desing</h1>
-        <p>Desde el diseño de interfaz de usuario hasta la experiencia de uso.</p>
-      </div>
-      <div>
-        <img src="./assets/Portafolio 3/Íconos/feather_search.svg" alt="" />
-        <h1>Research</h1>
-        <p>Mejora de aplicaciones y detección de errores en apps.</p>
-      </div>
-      <div>
-        <img
-          src="./assets/Portafolio 3/Íconos/majesticons_speakerphone-line.svg"
-          alt=""
-        />
-        <h1>Marketing</h1>
-        <p>Implementación de marketing digital.</p>
-      </div>
-      <div>
-        <img
-          src="./assets/Portafolio 3/Íconos/ic_outline-web-asset.svg"
-          alt=">"
-        />
-        <h1>Web Desing</h1>
-        <p>Diseño de sitios web y aplicaiones web.</p>
       </div>
     </section>
 
-    
-
-    <section id="estudios">
-      <div class="studies">
-        <img src="./assets/Portafolio 3/Logos-Imágenes/UNADM.png" alt="" />
-        <h3>UNADM</h3>
-        <p>2021-ACTUAL</p>
-
-        <img src="./assets/Portafolio 3/Logos-Imágenes/CECATI.png" alt="" />
-        <h3>CECATI 107</h3>
-        <p>2006-2007</p>
-
-        <img
-          src="./assets/Portafolio 3/Logos-Imágenes/logo_academlo 5.png"
-          alt=""
-        />
-        <h3>Academlo</h3>
-        <p>2022-2023</p>
-      </div>
+     <!---------------------------------FORM CONTACT ME-------------------------------------------------->
+     <section class="container-form">
+       <h1>CONTÁCTAME</h1>
+      <form id="form" action="https://formsubmit.co/ariel.fuentesgarcia@gmail.com" method="post" class="form">
+        <label for="name">Nombre:</label>
+        <input name="name" required type="text" id="name" placeholder="Juan">
+        <label for="email">Email:</label>
+        <input name="email" type="text" id="email" required placeholder="ejemplo@gmail.com">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" cols="30"rows="10"></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
     </section>
 
-    
-
-    
+<!-------------------------------------FOOTER--------------------------------------------------------->
 
     <footer>
-      <p>Hecho con HTML, CSS, SASS y Javascript</p>
-    </footer> -->
-
+      <p>Copyright Ariel Fuentes García.</p>
+    </footer>
+    
     <script src="./JS/main.js"></script>
   </body>
 </html>

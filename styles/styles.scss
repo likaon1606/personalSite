@@ -129,11 +129,11 @@ $blue4: #06283d;
   //-------------------DROPDOWN MENU---------------------------------------------------
   aside {
     background: $blue0;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 150px;
     position: absolute;
     overflow-y: hidden;
-    left: -150px;
+    left: -160px;
     transition: 0.5s;
   }
   .aside:hover {
@@ -143,17 +143,37 @@ $blue4: #06283d;
     transform: translateX(100%);
   }
   .option {
-    padding: 0.1px;
+    padding: 1px;
     color: black;
     & li {
-      margin: -5px;
+      padding: 3px;
+      margin-top: -12px;
       margin-left: 15px;
       list-style: none;
       font-weight: 900;
     }
   }
 
-  //---------------------ABOUT ME-----------------------------
+  //------------------------------WINDOWS POP UP-------------------------------------------------
+
+  .window-pop-up {
+    background: $blue4;
+    border-radius: 10PX;
+    padding: 10PX;
+    position: absolute;
+    margin-left: 43%;
+    margin-right: 5%;
+    display: none;
+    & ul {
+      list-style: none;
+      color: $blue0;
+    }
+  }
+  #close img{
+    width: 10%;
+  }
+  
+  //---------------------ABOUT ME---------------------------------------------------------------
   .node {
     text-align: center;
     margin-top: 20px;
@@ -166,8 +186,8 @@ $blue4: #06283d;
     width: 300px;
     height: 200px;
     margin: 10px;
-    margin-top: 6%;
-    margin-left: 5%;
+    margin-left: 6%;
+    margin-top: 10%;
     border: 10px solid #fff;
     overflow: hidden;
     position: relative;
@@ -301,6 +321,7 @@ $blue4: #06283d;
     column-count: 2;
     column-gap: 20px;
     background: #000;
+    border-radius: 10px;
     & h3 {
       letter-spacing: 0;
       padding: 0.25em 0 0.325em;
@@ -336,9 +357,9 @@ $blue4: #06283d;
   margin-top: 30px;
   color: $blue3;
 }
+//---------------------------------cub--------------------------------------------------------------
 #containerCub {
   perspective: 800px;
-  margin: 10px;
   width: 200px;
   margin-top: 50px;
 }
@@ -357,6 +378,7 @@ $blue4: #06283d;
   & img {
     width: 100px;
     height: 100px;
+    box-shadow: 3px 3px 5px 2px $lightGrayHover;
   }
 }
 //FORM
@@ -374,9 +396,71 @@ $blue4: #06283d;
 // POND HOUSE
 .right {
   transform: translateX(79px) rotateY(90deg);
-
 }
 
+//------------------------form------------------------------------------------
+
+.container-form {
+  margin-top: -12%;
+  text-align: center;
+  & h1 {
+    color: $blue3;
+  }
+}
+.form {
+  margin-top: 40px;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  background: $blue2;
+  border-radius: 10px;
+  & h3 {
+    padding: 10px;
+  }
+  & label {
+    display: block;
+    position: relative;
+    text-align: start;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  & input {
+   position: relative;
+   margin-left: -5px;
+   padding: 5px;
+   width: 90%;
+  }
+  & textarea {
+    margin: 5px;
+    width: 92%;
+  }
+  & .btn {
+    display: flex;
+    position: absolute;
+    margin-left: 120px;
+    background: $blue4;
+    color: $blue3;
+    width: 24%;
+    height: 10%;
+    padding: 5px;
+    font-size: 130%;
+    font-weight: 600;
+    align-items: center;
+  }
+}
+
+//---------------------------FOOTER---------------------------------------------------------------------
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  & p {
+    color: $blue4;
+    font-weight: 900;
+  text-shadow: -5px -8px 2px $blue2;
+  }
+}
 
 
 
