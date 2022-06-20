@@ -1,5 +1,4 @@
-@import url(/PORTAFOLIO/assets/fuentes/Rubik-Bold.ttf);
-
+//----------------------------COLORS--------------------------------------------
 $darkGray: #222222;
 $lightGray: #c8c8c8;
 $lightGrayHover: #acabab;
@@ -32,7 +31,7 @@ $blue4: #06283d;
 
   body {
     background-color: #f3fbff;
-    font-family: "Rubik";
+    font-family: sans-serif;
     transition: 0.3s ease all;
     &.dark {
       background-image: url(../assets/gifs/matrix.gif);
