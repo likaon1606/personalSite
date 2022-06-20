@@ -1,3 +1,6 @@
+//----------------------FONTS--------------------------------------
+@import url(/PORTAFOLIO/assets/fuentes/Rubik-Bold.ttf);
+
 //----------------------COLORS---------------------------------------
 
 $darkGray: #222222;
@@ -32,7 +35,7 @@ $blue4: #06283d;
 
   body {
     background-color: #f3fbff;
-    font-family: sans-serif;
+    font-family: 'Rubik' sans-serif;
     transition: 0.3s ease all;
     &.dark {
       background-image: url(../assets/gifs/matrix.gif);
@@ -166,7 +169,10 @@ $blue4: #06283d;
     display: none;
     & ul {
       list-style: none;
-      color: $blue0;
+      color: $blue0;  
+    }
+    & li {
+      padding: 3px;
     }
   }
   #close img{

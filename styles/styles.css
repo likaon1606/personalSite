@@ -1,3 +1,4 @@
+@import url(/PORTAFOLIO/assets/fuentes/Rubik-Bold.ttf);
 .rotate {
   -webkit-animation: rotation 15s infinite linear;
           animation: rotation 15s infinite linear;
@@ -35,7 +36,7 @@
   }
   body {
     background-color: #f3fbff;
-    font-family: sans-serif;
+    font-family: 'Rubik' sans-serif;
     -webkit-transition: 0.3s ease all;
     transition: 0.3s ease all;
   }
@@ -173,6 +174,9 @@
   .window-pop-up ul {
     list-style: none;
     color: #dff6ff;
+  }
+  .window-pop-up li {
+    padding: 3px;
   }
   #close img {
     width: 10%;
