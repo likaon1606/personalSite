@@ -56,14 +56,3 @@ function close () {
     document.getElementById('window').style.display='none';
 }
 
-//-------------------------FORM SEND DATA ---------------------------------------------------------------
-
-const $form = document.querySelector('#form')
-
-$form.addEventListener('submit', handleSubmit)
-
-function handleSubmit (event) {
-    event.preventDefault() // do not recharge
-    const form = new FormData(this)
-    console.log(form.get('name'))
-}

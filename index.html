@@ -182,14 +182,14 @@
      <!---------------------------------FORM CONTACT ME-------------------------------------------------->
      <section class="container-form">
        <h1>CONTÁCTAME</h1>
-      <form name="contact" netlify id="form" class="form">
+      <form id="form" class="form" name="fileForm" enctype="multipart/form-data" data-netlify="true">
         <label for="name">Nombre:</label>
         <input name="name" required type="text" id="name" placeholder="Juan">
         <label for="email">Email:</label>
         <input name="email" type="text" id="email" required placeholder="ejemplo@gmail.com">
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" cols="30"rows="10"></textarea>
-        <button type="submit" class="btn">Enviar</button>
+        <button type="submit" class="btn" id="sendEmail">Enviar</button>
       </form>
     </section>
 
