@@ -28,24 +28,24 @@ $openClose.addEventListener('click', () => {
 });
 
 // TYPEWRITER
-// let text = document.getElementById('typewriter');
-// let str = text.innerHTML;
+let text = document.getElementById('typewriter');
+let str = text.innerHTML;
 
-// text.innerHTML = '';
+text.innerHTML = '';
 
-// let speed = 40;
-// let i = 0;
+let speed = 40;
+let i = 0;
 
-// //efect typewriter
-// function typeWriter() {
-//     if ( i < str.length ) {
-//         text.innerHTML += str.charAt(i);
-//         i++;
-//         setTimeout( typeWriter, speed );
-//     }
-// }
+//efect typewriter
+function typeWriter() {
+    if ( i < str.length ) {
+        text.innerHTML += str.charAt(i);
+        i++;
+        setTimeout( typeWriter, speed );
+    }
+}
 
-// setTimeout( typeWriter, speed );
+setTimeout( typeWriter, speed );
 
 //--------------------------POP UP WINDOWS-----------------------------------------------------------
 
