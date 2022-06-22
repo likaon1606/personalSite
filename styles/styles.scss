@@ -189,12 +189,16 @@ $blue4: #06283d;
       width: 30%;
     }
   }
+  .container-view {
+    display: flex;
+    justify-content: center;
+    }
   .view {
     display: flex;
     width: 300px;
     height: 200px;
     margin: 10px;
-    margin-left: 6%;
+    
     margin-top: 10%;
     border: 10px solid #fff;
     overflow: hidden;
@@ -324,40 +328,40 @@ $blue4: #06283d;
     color: $blue3;
   }
   .skills {
-    margin: 5px;
+    margin: 10px;
     margin-top: 15px;
     text-align: center;
     column-count: 2;
     column-gap: 20px;
-    background: $blue1;
+    background: $blue0;
     border-radius: 10px;
     & h3 {
       padding: 10px;
       text-align: start;
-  //     letter-spacing: 0;
-  //     padding: 0.25em 0 0.325em;
-  //     display: block;
-  //     margin: 0 auto;
-  //     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  //     // Clip Background Image
-  //     background: url(../assets/gifs/img/fondotext.png) repeat-y;
-  //     -webkit-background-clip: text;
-  //     background-clip: text;
-  //     //Animate Background Image
-  //     -webkit-text-fill-color: transparent;
-  //     -webkit-animation: aitf 80s linear infinite;
-  //     //Activate hardware acceleration for smoother animations
-  //     -webkit-transform: translate3d(0, 0, 0);
-  //     -webkit-backface-visibility: hidden;
-  //   }
-  // }
-  // // Animate Background Image
-  // @-webkit-keyframes aitf {
-  //   0% {
-  //     background-position: 0% 50%;
-  //   }
-  //   100% {
-  //     background-position: 100% 50%;
+      letter-spacing: 0;
+      padding: 0.25em 0 0.325em;
+      display: block;
+      margin: 0 auto;
+      text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+      // Clip Background Image
+      background: url(../assets/gifs/img/fondotext.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+      //Animate Background Image
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: aitf 80s linear infinite;
+      //Activate hardware acceleration for smoother animations
+      -webkit-transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+    }
+  }
+  // Animate Background Image
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
     }
   }
 
@@ -365,11 +369,13 @@ $blue4: #06283d;
 
 .briefcaf {
   text-align: center;
+  position: relative;
   margin-top: 30px;
   color: $blue3;
 }
 //---------------------------------cub--------------------------------------------------------------
 #containerCub {
+  margin-left: 20%;
   perspective: 800px;
   width: 200px;
   margin-top: 50px;
@@ -379,7 +385,6 @@ $blue4: #06283d;
   width: 200px;
   height: 200px;
   // transform: rotateY(45deg);
-  margin-left: 35%;
   & p {
     visibility: hidden;
   }
@@ -413,11 +418,12 @@ $blue4: #06283d;
 
 .container-form {
   margin-top: -12%;
-  text-align: center;
   & h1 {
+    text-align: center;
     color: $blue3;
   }
 }
+
 .form {
   margin-top: 40px;
   position: relative;
@@ -425,9 +431,6 @@ $blue4: #06283d;
   text-align: center;
   background: $blue2;
   border-radius: 10px;
-  & h3 {
-    padding: 10px;
-  }
   & label {
     display: block;
     position: relative;
@@ -446,9 +449,7 @@ $blue4: #06283d;
     width: 92%;
   }
   & .btn {
-    display: flex;
-    position: absolute;
-    margin-left: 120px;
+    position: relative;
     background: $blue4;
     color: $blue3;
     width: 24%;
@@ -456,7 +457,7 @@ $blue4: #06283d;
     padding: 5px;
     font-size: 130%;
     font-weight: 600;
-    align-items: center;
+    margin: 15px;
   }
 }
 
@@ -494,16 +495,15 @@ footer {
     margin-left: 50%;
     margin-right: 1%;
   }
-  .view {
-    margin-left: 8%;
+  .container-view {
+  display: flex;
+  justify-content: center;
   }
  .form {
   & label {
     margin-left: 1.5%;
   }
-  & .btn {
-    margin-left: 40%;
- }}
+}
 
 }
 //......................................................................................
@@ -511,508 +511,388 @@ footer {
 //......................................................................................
 
 @media only screen and (min-width: 375px) {
-  .view {
-    right: -1%;
+  #containerCub{
+    margin-left: 25%;
   }
-  #cub {
-    margin-left: 45%;
-  }
-
 }
 @media only screen and (min-width: 414px) {
   .view {
-    width: 380px;
-    height: 220px;
-    margin-left: 3%;
+    width: 100%;
   }
-  #cub {
-    margin-left: 55%;
-  }
-  .form {
-    & input {
-      font-size: 100%;
-    }
-    & textarea {
-      font-size: 120%;
-    }
-  }
+  .view .mask, .content {
+  width: 100%;
+  height: 100%;
+}
 
 
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
+  .switch {
+    margin-top: -8%;
+    & span {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+    &::after {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .barsMenu {
+    margin-top: 1%;
+    & span {
+      width: 180%;
+      height: 5px;
+      margin-top: 10px;
+    }
+  }
+  .activeline1BMenu {
+    transform: rotate(45deg) translate(-4px, 1px);
+  }
+  .activeline2BMenu {
+    transform: rotate(45deg) translate(-14px, -10px);
+  }
+  .activeline3BMenu {
+    transform: rotate(-45deg) translate(-3px, 2px);
+  }
+  aside {
+    width: 245px;
+    margin-left: -13%;
+    & li {
+      font-size: 160%;
+    }
+  }
+  .window-pop-up {
+    & li {
+      font-size: 150%;
+    }
+  }
+  .view {
+    height: 300px;
+    margin-top: 5%;
+    & h2 {
+      font-size: 30px;
+    }
+    & p {
+      margin-top: 30px;
+      font-size: 22px;
+    }
+    &  a.info {
+      margin-top: 30px;
+      font-size: 30px;
+    }
+  }
+  .aboutMe {
+    margin-top: 10%;
+    & h1 {
+      font-size: 200%;
+    }
+    & p {
+      margin-top: 5%;
+      font-size: 150%;
+    }
+  }
+  .titleSkills {
+    margin-top: 10%;
+    font-size: 200%;
+  }
+  .skills {
+    margin-top: 5%;
+    & h3 {
+      font-size: 150%;
+    }
+  }
+  .briefcaf {
+    margin-top: 10%;
+    font-size: 135%;
+  }
+  #containerCub {
+    margin-top: 15%;
+    margin-left: 33%;
+    & img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .container-form {
+    margin-top: 10%;
+  }
+  //FORM
+.front {
+  transform: translateZ(100px); 
+}
+//POKEAPI
+.back {
+  transform: translateZ(-100px); 
+}
+//RICK AND MORTY
+.left {
+  transform: translateX(-100px) rotateY(90deg);
+}
+// POND HOUSE
+.right {
+  transform: translateX(100px) rotateY(90deg);
+}
+.container-form {
+  margin-top: 20%;
+  margin-left: 15%;
+  & h1 {
+    font-size: 200%;
+    margin-right: 12%;
+  }
+  & .form {
+    margin-top: 5%;
+    width: 80%;
+  }
+  & label {
+    font-size: 150%;
+  }
+  & input {
+    font-size: 130%;
+  }
+  & textarea {
+    font-size: 150%;
+  }
+}
+
 }
 //......................................................................................
 //---------------------------TABLETS----------------------------------------------------
 //......................................................................................
 
-@media only screen and (min-width: 600px) {
-}
+
 @media only screen and (min-width: 768px) {
-
+  aside {
+    margin-left: -10%;
+  }
+  .container-form {
+    & h1 {
+      margin-right: 15%;
+    }
+    & label {
+      margin-left: 3%;
+    }
+  }
 
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 800px) {
+  .view {
+    margin: 30px;
+    margin-top: -1%;
+    width: 100%
+  }
+ 
+
 }
-@media only screen and (min-width: 1024) {
+@media only screen and (min-width: 1024px) {
+  .switch {
+    margin-top: -7%;
+  }
+  .barsMenu {
+    margin-top: 2.5%;
+    margin-left: -4%;
+    & span {
+      width: 300%;
+      height: 8px;
+    }
+  }
+  .activeline1BMenu {
+    transform: rotate(45deg) translate(-4px, -16px);
+  }
+  .activeline2BMenu {
+    transform: rotate(45deg) translate(-18px, -30px);
+  }
+  .activeline3BMenu {
+    transform: rotate(-45deg) translate(3px, 20px);
+  }
+  aside {
+    margin-left: -7.5%;
+  }
+  .window-pop-up {
+    margin-right: 1%;
+    margin-left: 70%;
+  }
+  #close img {
+    position: relative;  
+  }
+  .container-view {
+    margin-left: -27%;
+  }
+  .view {
+    margin-top: -3%;
+    width: 55%;
+  }
+  .icons {
+    margin-top: -36%;
+    margin-left: 79%;
+    & img {
+      margin: 50px;
+      width: 28%;
+      display: block;
+    }
+  }
+  .skills h3 {
+    font-size: 200%;
+    text-align: center;
+  }
+  .briefcaf {
+    margin-top: 5%;
+  }
+  #cub {
+    margin-left: 50%;
+    margin-top: -30%;
+  & img {
+    width: 300px;
+    height: 300px;
+  }
+  }
+  //FORM
+.front {
+  transform: translateZ(151px); 
 }
-@media only screen and (min-width: 1280) {
+//POKEAPI
+.back {
+  transform: translateZ(-151px); 
+}
+//RICK AND MORTY
+.left {
+  transform: translateX(-150px) rotateY(90deg);
+}
+// POND HOUSE
+.right {
+  transform: translateX(150px) rotateY(90deg);
+}
+.container-form {
+  margin-top: 25%;
+}
+
+
+}
+@media only screen and (min-width: 1280px) {
+  aside {
+    left: -12%;
+  }
+  .window-pop-up {
+    & li {
+      font-size: 200%;
+    }
+  }
+  .view {
+    margin-top: -8%;
+    width: 600px;
+    margin-left: -250px;
+  }
+  .icons {
+    margin-top: -20%;
+    margin-left: 50%;
+    & img {
+      width: 10%;
+      display: inline;
+    }
+  }
+  .aboutMe {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .titleSkills {
+    margin-top: 25px;
+  }
+  .skills {
+    margin: 30px;
+  }
+
+
 }
 
 //---------------------------DESKTOP-----------------------------
 
+@media only screen and (min-width: 1400px) {
+  aside {
+    left: -10%;
+  }
+  .container-view {
+    margin-left: -32%;
+  }
+
+}
 @media only screen and (min-width: 1600px) {
-  
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
-  background-color: #f3fbff;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: 0.3s ease all;
-  &.dark {
-    background-image: url(../assets/gifs/matrix.gif);
+  .switch {
+    margin-top: -9%;
   }
-}
-
-nav {
-  position: relative;
-  background-color: $blue1;
-  opacity: 0.8;
-  width: 100%;
-}
-//-----------LOGO LEFT ROTATE-----------
-.logoLeft {
-  text-align: center;
-  & img {
-    position: relative;
-    width: 15%;
-    margin-top: 10px;
+  .barsMenu {
+    visibility: hidden;
   }
-}
-
-//------------BUTTON DARK MODE--------------
-
-.switch {
-  background: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  position: absolute;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-  margin-left: 87%;
-  margin-top: -9%;
-  &::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background: #f1f1f1;
-    top: 0;
-    left: 0t;
-    right: unset;
-    border-radius: 100px;
-    transition: 0.3s ease all;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-  }
-  &.active {
-    background: orange;
-    color: #000;
-    &::after {
-      right: 0;
-      left: unset;
+  aside {
+    background: none;
+    width: 43%;
+    top: 8%;
+    margin-left: 10%;
+    & li {
+      font-size: 180%;
+      color: $blue4;
+      display: inline-block;
+    }
+    & li:hover {
+      color: orangered;
     }
   }
-  span {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
-    color: #ffffff;
+  .window-pop-up {
+    margin-left: 10%;
+    margin-right:65%;
+    & ul {
+      margin-top: -45px;
+    }
+    & li {
+      position: relative;
+      margin-left: 13%;
+    }
   }
-}
-
-// CREATE BARS TO MENU
-.barsMenu {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -30%;
-  left: 7%;
-  transform: translate(-50%, 50%);
-}
-.barsMenu span {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: $lightGrayHover;
-  margin-top: 9px;
-  transform-origin: 0px 100%;
-  transition: all 300ms;
-}
-.activeline1BMenu {
-  transform: rotate(45deg) translate(3px, -1px);
-}
-.activeline2BMenu {
-  transform: rotate(45deg) translate(-7px, -10px);
-}
-.activeline3BMenu {
-  transform: rotate(-45deg) translate(1px, 4px);
-}
-//-------------------DROPDOWN MENU---------------------------------------------------
-aside {
-  background: $blue0;
-  border-radius: 10px;
-  width: 200px;
-  position: absolute;
-  overflow-y: hidden;
-  left: -200px;
-  transition: 0.5s;
-}
-.aside:hover {
-  overflow-y: auto;
-}
-.desplegar {
-  transform: translateX(100%);
-}
-.option {
-  padding: 1px;
-  color: black;
-  & li {
-    padding: 3px;
-    margin-top: -12px;
-    margin-left: 15px;
-    list-style: none;
-    font-weight: 600;
-    font-size: 140%;
+  .node {
+    & img {
+      width: 10%;
+    }
   }
-}
-
-//------------------------------WINDOWS POP UP-------------------------------------------------
-
-.window-pop-up {
-  background: $blue4;
-  border-radius: 10PX;
-  padding: 10PX;
-  position: absolute;
-  margin-left: 45%;
-  margin-right: 2%;
-  display: none;
-  & ul {
-    list-style: none;
-    color: $blue0;  
+  .container-view {
+    margin-top: 12%;
+    margin-left: -650px;
+    & .view {
+      height: 400px;
+    }
+    & .mask {
+      margin-top: 7px;
+      height: 96%;
+    }
+    & img {
+      width: 50%;
+      height: 97.5%;
+    }
+   
+    
   }
-  & li {
-    padding: 3px;
-    font-size: 130%;
+  .icons {
+    position: relative;
+    margin-top: -44%;
+    margin-left: 55%;
+    width: 40%;
+    & img {
+      width: 9%;
+      margin:40px;
+    }
+    & img:hover {
+      transform: scale(1.5);
+    }
   }
-}
-#close img{
-  width: 10%;
-}
-
-//---------------------ABOUT ME---------------------------------------------------------------
-.node {
-  text-align: center;
-  margin-top: 20px;
-  & img {
-    width: 30%;
+  .aboutMe {
+    margin-left: 40%;
+    & h1 {
+      font-size: 300%;
+    }
+    & p {
+      font-size: 200%;
+    }
   }
-}
-.view {
-  display: flex;
-  width: 90%;
-  height: 250px;
-  margin: 10px;
-  margin-left: 4.5%;
-  margin-top: 9%;
-  border: 10px solid #fff;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  box-shadow: 1px 1px 2px #e6e6e6;
-  cursor: default;
-  background: #fff url(../assets/gifs/estrellas.gif) no-repeat center center;
-}
-.view .mask,
-.view .content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-.view img {
-  display: block;
-  position: relative;
-}
-.view h2 {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  font-size: 20px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  margin: 20px 0 0 0;
-}
-.view p {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 17px;
-  position: relative;
-  color: #fff;
-  padding: 10px 20px 20px;
-}
-.view a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
-  box-shadow: 0 0 1px #000;
-  font-size: 25px;
-}
-.view a.info:hover {
-  box-shadow: 0 0 5px #000;
-}
-//---------------------EFECT ABOUT ME---------------------------------------
-.view img {
-  transition: all 0.5s ease-out;
-  opacity: 1;
-}
-.view .mask {
-  background-color: rgba(77, 44, 35, 0.5);
-  transform: rotate(0deg) scale(1);
-  opacity: 0;
-  transition: all 0.3s ease-out;
-  transform: translateY(-200px) rotate(180deg);
-}
-.view h2 {
-  transform: translateY(-200px);
-  transition: all 0.2s ease-in-out;
-}
-.view p {
-  transform: translateY(-200px);
-  transition: all 0.2s ease-in-out;
-}
-.view a.info {
-  transform: translateY(-200px);
-  transition: all 0.2s ease-in-out;
-}
-//--------------------------EFECT HOVER ABOUT ME----------------------
-.view:hover img {
-  transform: rotate(720deg) scale(0);
-  opacity: 0;
-}
-.view:hover .mask {
-  opacity: 1;
-  transform: translateY(0px) rotate(0deg);
-  transition-delay: 0.4s;
-}
-.view:hover h2 {
-  transform: translateY(0px);
-  transition-delay: 0.7s;
-}
-.view:hover p {
-  transform: translateY(0px);
-  transition-delay: 0.6s;
-}
-.view:hover a.info {
-  transform: translateY(0px);
-  transition-delay: 0.5s;
-}
-.aboutMe {
-  margin-top: 10px;
-  text-align: center;
-  & h1 {
-    color: $blue3;
-    font-size: 200%;
-  }
-  & p {
-    text-align: justify;
-    margin: 10px;
-    font-size: 150%;
-  }
-}
 
-//---------------------------------ICONS---------------------------------------------
-
-.icons {
-  text-align: center;
-  & img {
-    width: 12%;
-    border: 1px solid $blue2;
-    border-radius: 95%;
-    margin: 20px;
-  }
-}
-
-//--------------------------------SKILLS-----------------------------------------------
-
-.titleSkills {
-  margin-top: 30px;
-  text-align: center;
-  color: $blue3;
-  font-size: 200%;
-}
-.skills {
-  margin: 10px;
-  margin-top: 15px;
-  text-align: center;
-  column-count: 2;
-  column-gap: 20px;
-  background: #000;
-  border-radius: 10px;
-  & h3 {
-    font-size: 150%;
-    letter-spacing: 0;
-    padding: 0.25em 0 0.325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-    // Clip Background Image
-    background: url(../assets/gifs/img/fondotext.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-    //Animate Background Image
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    //Activate hardware acceleration for smoother animations
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-  }
-}
-// Animate Background Image
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-//------------------------------------------WORKS------------------------------------------------
-
-.briefcaf {
-text-align: center;
-margin-top: 30px;
-color: $blue3;
-& h1 {
-  font-size: 200%;
-}
-}
-//---------------------------------cub--------------------------------------------------------------
-#containerCub {
-perspective: 800px;
-width: 200px;
-margin-top: 50px;
-}
-#cub {
-transform-style: preserve-3d;
-width: 200px;
-height: 200px;
-// transform: rotateY(45deg);
-margin-left: 75%;
-& p {
-  visibility: hidden;
-}
-}
-.face {
-position: absolute;
-& img {
-  width: 150px;
-  height: 150px;
-  box-shadow: 3px 3px 5px 2px $lightGrayHover;
-}
-}
-//FORM
-.front {
-transform: translateZ(75px); 
-}
-//POKEAPI
-.back {
-transform: translateZ(-78px); 
-}
-//RICK AND MORTY
-.left {
-transform: translateX(-75px) rotateY(90deg);
-}
-// POND HOUSE
-.right {
-transform: translateX(100px) rotateY(90deg);
-}
-
-//------------------------form------------------------------------------------
-
-.container-form {
-margin-top: 5%;
-text-align: center;
-& h1 {
-  color: $blue3;
-  font-size: 200%;
-}
-}
-.form {
-position: relative;
-margin: 20px;
-text-align: center;
-background: $blue2;
-border-radius: 10px;
-& label {
-  display: block;
-  position: relative;
-  text-align: start;
-  font-size: 120%;
-  margin-top: 10px;
-  padding: 10px;
-  margin-left: 2%;
-}
-& input {
- position: relative;
- margin-left: -5px;
- padding: 5px;
- width: 90%;
-}
-& textarea {
-  margin: 5px;
-  width: 92%;
-}
-& .btn {
-  display: flex;
-  position: absolute;
-  margin-left: 40%;
-  background: $blue4;
-  color: $blue3;
-  width: 24%;
-  height: 10%;
-  padding: 5px;
-  font-size: 130%;
-  font-weight: 600;
-  align-items: center;
-}
-}
-
-//---------------------------FOOTER---------------------------------------------------------------------
-
-footer {
-text-align: center;
-padding: 20px;
-margin-top: 100px;
-& p {
-  color: $blue4;
-  font-weight: 900;
-text-shadow: -5px -8px 2px $blue2;
-}
-}
 
 }
