@@ -426,6 +426,9 @@
     -webkit-transform: translateX(79px) rotateY(90deg);
             transform: translateX(79px) rotateY(90deg);
   }
+  .carrusel {
+    visibility: hidden;
+  }
   .container-form {
     margin-top: -12%;
   }
@@ -877,6 +880,73 @@
   }
   .aboutMe p {
     font-size: 200%;
+  }
+  .skills {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+  .skills h3 {
+    padding: 10px;
+  }
+  #containerCub {
+    margin-top: 10%;
+    margin-left: 60%;
+  }
+  .carrusel {
+    margin-top: -12%;
+    margin-left: 10%;
+    visibility: visible;
+    width: 600px;
+    height: 400px;
+  }
+  .carrusel .btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #img-carrusel {
+    width: 500px;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 0px 10px 2px #47b5ff;
+            box-shadow: 0px 0px 10px 2px #47b5ff;
+    border-radius: 10px;
+  }
+  .btn-wrapper img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #retroceder, #avanzar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+    width: 70px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: transparent;
+  }
+  #retroceder img:hover, #avanzar img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  #retroceder {
+    margin-top: -.5%;
+    margin-left: -5%;
+  }
+  #avanzar {
+    margin-top: -.5%;
+    margin-left: 32%;
+  }
+  .container-form {
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
