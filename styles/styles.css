@@ -48,6 +48,9 @@
     opacity: 0.8;
     width: 100%;
   }
+  body.dark nav {
+    background: #222222;
+  }
   .logoLeft {
     text-align: center;
   }
@@ -143,6 +146,9 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+  body.dark aside {
+    background: #222222;
+  }
   .aside:hover {
     overflow-y: auto;
   }
@@ -161,6 +167,9 @@
     list-style: none;
     font-weight: 900;
   }
+  body.dark .option li {
+    color: white;
+  }
   .window-pop-up {
     background: #06283d;
     border-radius: 10PX;
@@ -169,6 +178,9 @@
     margin-left: 43%;
     margin-right: 5%;
     display: none;
+  }
+  body.dark .window-pop-up {
+    background: #222222;
   }
   .window-pop-up ul {
     list-style: none;
@@ -326,9 +338,15 @@
   .aboutMe h1 {
     color: #1363df;
   }
+  body.dark .aboutMe h1 {
+    color: white;
+  }
   .aboutMe p {
     text-align: justify;
     margin: 10px;
+  }
+  body.dark .aboutMe p {
+    color: white;
   }
   .icons {
     text-align: center;
@@ -339,10 +357,17 @@
     border-radius: 95%;
     margin: 20px;
   }
+  body.dark .icons img {
+    border: 1px solid white;
+    background: white;
+  }
   .titleSkills {
     margin-top: 30px;
     text-align: center;
     color: #1363df;
+  }
+  body.dark .titleSkills {
+    color: white;
   }
   .skills {
     margin: 10px;
@@ -354,6 +379,9 @@
             column-gap: 20px;
     background: #dff6ff;
     border-radius: 10px;
+  }
+  body.dark .skills {
+    background: #acabab;
   }
   .skills h3 {
     padding: 10px;
@@ -384,6 +412,9 @@
     position: relative;
     margin-top: 30px;
     color: #1363df;
+  }
+  body.dark .briefcaf {
+    color: white;
   }
   #containerCub {
     margin-left: 20%;
@@ -423,8 +454,8 @@
             transform: translateX(-50px) rotateY(90deg);
   }
   .right {
-    -webkit-transform: translateX(79px) rotateY(90deg);
-            transform: translateX(79px) rotateY(90deg);
+    -webkit-transform: translateX(50px) rotateY(90deg);
+            transform: translateX(50px) rotateY(90deg);
   }
   .carrusel {
     visibility: hidden;
@@ -436,6 +467,9 @@
     text-align: center;
     color: #1363df;
   }
+  body.dark .container-form h1 {
+    color: white;
+  }
   .form {
     margin-top: 40px;
     position: relative;
@@ -444,12 +478,18 @@
     background: #47b5ff;
     border-radius: 10px;
   }
+  body.dark .form {
+    background: #222222;
+  }
   .form label {
     display: block;
     position: relative;
     text-align: start;
     margin-top: 10px;
     padding: 10px;
+  }
+  body.dark .form label {
+    color: white;
   }
   .form input {
     position: relative;
@@ -472,6 +512,9 @@
     font-weight: 600;
     margin: 15px;
   }
+  body.dark .form .btn {
+    color: white;
+  }
   footer {
     text-align: center;
     padding: 20px;
@@ -481,6 +524,10 @@
     color: #06283d;
     font-weight: 900;
     text-shadow: -5px -8px 2px #47b5ff;
+  }
+  body.dark footer p {
+    color: white;
+    text-shadow: -5px -8px 2px #acabab;
   }
 }
 
@@ -827,6 +874,9 @@
     display: inline-block;
   }
   aside li:hover {
+    color: orangered;
+  }
+  body.dark aside li:hover {
     color: orangered;
   }
   .view {

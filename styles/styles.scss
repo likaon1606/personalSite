@@ -49,7 +49,11 @@ $blue4: #06283d;
     background-color: $blue1;
     opacity: 0.8;
     width: 100%;
-  }
+    body.dark & {
+      background: $darkGray;
+    }
+    }
+   
   //-----------LOGO LEFT ROTATE-----------
   .logoLeft {
     text-align: center;
@@ -140,6 +144,9 @@ $blue4: #06283d;
     overflow-y: hidden;
     left: -160px;
     transition: 0.5s;
+    body.dark &{
+      background: $darkGray;
+  }
   }
   .aside:hover {
     overflow-y: auto;
@@ -156,6 +163,9 @@ $blue4: #06283d;
       margin-left: 15px;
       list-style: none;
       font-weight: 900;
+      body.dark &{
+        color: white;
+      }
     }
   }
 
@@ -169,6 +179,9 @@ $blue4: #06283d;
     margin-left: 43%;
     margin-right: 5%;
     display: none;
+    body.dark & {
+      background: $darkGray;
+    }
     & ul {
       list-style: none;
       color: $blue0;  
@@ -198,7 +211,6 @@ $blue4: #06283d;
     width: 300px;
     height: 200px;
     margin: 10px;
-    
     margin-top: 10%;
     border: 10px solid #fff;
     overflow: hidden;
@@ -301,10 +313,16 @@ $blue4: #06283d;
     text-align: center;
     & h1 {
       color: $blue3;
+      body.dark & {
+        color: white;
+      }
     }
     & p {
       text-align: justify;
       margin: 10px;
+      body.dark & {
+        color: white;
+      }
     }
   }
 
@@ -317,6 +335,10 @@ $blue4: #06283d;
       border: 1px solid $blue2;
       border-radius: 95%;
       margin: 20px;
+      body.dark & {
+        border: 1px solid white;
+        background: white;
+      }
     }
   }
 
@@ -326,6 +348,9 @@ $blue4: #06283d;
     margin-top: 30px;
     text-align: center;
     color: $blue3;
+    body.dark & {
+      color: white;
+    }
   }
   .skills {
     margin: 10px;
@@ -335,6 +360,9 @@ $blue4: #06283d;
     column-gap: 20px;
     background: $blue0;
     border-radius: 10px;
+    body.dark & {
+      background: $lightGrayHover;
+    }
     & h3 {
       padding: 10px;
       text-align: start;
@@ -372,6 +400,9 @@ $blue4: #06283d;
   position: relative;
   margin-top: 30px;
   color: $blue3;
+  body.dark & {
+    color: white;
+  }
 }
 //---------------------------------cub--------------------------------------------------------------
 #containerCub {
@@ -411,7 +442,7 @@ $blue4: #06283d;
 }
 // POND HOUSE
 .right {
-  transform: translateX(79px) rotateY(90deg);
+  transform: translateX(50px) rotateY(90deg);
 }
 //------------------------CAROUSEL---------------------------------------------
 
@@ -426,6 +457,9 @@ $blue4: #06283d;
   & h1 {
     text-align: center;
     color: $blue3;
+    body.dark & {
+      color: white;
+    }
   }
 }
 
@@ -436,12 +470,18 @@ $blue4: #06283d;
   text-align: center;
   background: $blue2;
   border-radius: 10px;
+  body.dark & {
+    background: $darkGray;
+  }
   & label {
     display: block;
     position: relative;
     text-align: start;
     margin-top: 10px;
     padding: 10px;
+    body.dark & {
+      color: white;
+    }
   }
   & input {
    position: relative;
@@ -463,6 +503,9 @@ $blue4: #06283d;
     font-size: 130%;
     font-weight: 600;
     margin: 15px;
+    body.dark & {
+      color: white;
+    }
   }
 }
 
@@ -476,6 +519,10 @@ footer {
     color: $blue4;
     font-weight: 900;
   text-shadow: -5px -8px 2px $blue2;
+  body.dark & {
+    color: white;
+    text-shadow: -5px -8px 2px $lightGrayHover;
+  }
   }
 }
 
@@ -841,6 +888,9 @@ footer {
     }
     & li:hover {
       color: orangered;
+      body.dark &{
+        color: orangered;
+    }
     }
   }
   .view {
