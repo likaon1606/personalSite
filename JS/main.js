@@ -59,7 +59,13 @@ function close () {
 //-----------------------------CAROUSEL------------------------------------------------
 const imgUrl = [
     "assets/gifs/img/1.jpg", 
-    "assets/gifs/img/2.jpg"
+    "assets/gifs/img/2.jpg",
+    "assets/gifs/img/P1.jpg",
+    "assets/gifs/img/P2.jpg",
+    "assets/gifs/img/C1.jpg",   
+    "assets/gifs/img/C2.jpg",
+    "assets/gifs/img/F1.jpg",
+    "assets/gifs/img/F2.jpg",
 ]
 
 let indiceImgActual = 0

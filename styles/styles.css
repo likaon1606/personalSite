@@ -829,6 +829,9 @@
   aside li:hover {
     color: orangered;
   }
+  .view {
+    margin-top: -6%;
+  }
   .window-pop-up {
     margin-left: 10%;
     margin-right: 65%;
@@ -860,7 +863,7 @@
   }
   .icons {
     position: relative;
-    margin-top: -44%;
+    margin-top: -47%;
     margin-left: 55%;
     width: 40%;
   }
@@ -881,6 +884,9 @@
   .aboutMe p {
     font-size: 200%;
   }
+  .titleSkills {
+    margin-top: 6%;
+  }
   .skills {
     -webkit-column-count: 4;
             column-count: 4;
@@ -896,8 +902,8 @@
     margin-top: -12%;
     margin-left: 10%;
     visibility: visible;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
   }
   .carrusel .btn-wrapper {
     display: -webkit-box;
@@ -908,8 +914,8 @@
             justify-content: space-between;
   }
   #img-carrusel {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
