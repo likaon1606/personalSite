@@ -353,11 +353,12 @@ $blue4: #06283d;
     }
   }
   .skills {
+    padding: 10px;
     margin: 10px;
     margin-top: 15px;
     text-align: center;
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 5px;
     background: $blue0;
     border-radius: 10px;
     body.dark & {
