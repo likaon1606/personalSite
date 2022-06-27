@@ -447,9 +447,10 @@ $blue4: #06283d;
 }
 //------------------------CAROUSEL---------------------------------------------
 
-.carrusel{
+.carousel {
   visibility: hidden;
 }
+
 
 //------------------------form------------------------------------------------
 
@@ -980,19 +981,19 @@ footer {
     margin-left: 60%;
   }
   //---------------------CAROUSEL--------------------------------------------------
-  .carrusel{
+  .carousel{
     margin-top: -12%;
     margin-left: 10%;
     visibility: visible;
     width: 500px;
     height: 300px;
 }
-.carrusel .btn-wrapper{
+.carousel .btn-wrapper{
   display: flex;
   justify-content: space-between;
 }
 
-#img-carrusel{
+#img-carousel{
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -1005,7 +1006,7 @@ footer {
   transform: scale(1.2);
 }
 
-#retroceder, #avanzar{
+#left, #right{
     display: flex;
     position: absolute;
     margin-top: 500px;
@@ -1018,11 +1019,11 @@ footer {
     transform: scale(1.5);
    }
 }
-#retroceder {
+#left {
   margin-top: -.5%;
   margin-left: -5%;
 }
-#avanzar {
+#right {
   margin-top: -.5%;
   margin-left: 32%;
 }

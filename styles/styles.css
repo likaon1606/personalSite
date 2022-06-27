@@ -458,7 +458,7 @@
     -webkit-transform: translateX(50px) rotateY(90deg);
             transform: translateX(50px) rotateY(90deg);
   }
-  .carrusel {
+  .carousel {
     visibility: hidden;
   }
   .container-form {
@@ -965,14 +965,14 @@
     margin-top: 10%;
     margin-left: 60%;
   }
-  .carrusel {
+  .carousel {
     margin-top: -12%;
     margin-left: 10%;
     visibility: visible;
     width: 500px;
     height: 300px;
   }
-  .carrusel .btn-wrapper {
+  .carousel .btn-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -980,7 +980,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #img-carrusel {
+  #img-carousel {
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -994,7 +994,7 @@
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  #retroceder, #avanzar {
+  #left, #right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1006,15 +1006,15 @@
     margin: 10px;
     background-color: transparent;
   }
-  #retroceder img:hover, #avanzar img:hover {
+  #left img:hover, #right img:hover {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
-  #retroceder {
+  #left {
     margin-top: -.5%;
     margin-left: -5%;
   }
-  #avanzar {
+  #right {
     margin-top: -.5%;
     margin-left: 32%;
   }

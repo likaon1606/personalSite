@@ -68,39 +68,39 @@ const imgUrl = [
     "assets/gifs/img/F2.jpg",
 ]
 
-let indiceImgActual = 0
-const btnRetroceder = document.getElementById( "retroceder" ) 
-const btnAvanzar = document.getElementById( "avanzar" )
-const img = document.getElementById( "img-carrusel" )
+let actualIndex = 0
+const btnLeft = document.getElementById( "left" ) 
+const btnRight = document.getElementById( "right" )
+const img = document.getElementById( "img-carousel" )
 
-document.addEventListener( "DOMContentLoaded", (e) => cargarImagen(e) )
-btnAvanzar.addEventListener( "click", (e) => mostrarSiguiente(e) )
-btnRetroceder.addEventListener( "click", (e) => mostrarAnterior(e) )
+document.addEventListener( "DOMContentLoaded", (e) => uploadImage(e) )
+btnRight.addEventListener( "click", (e) => next(e) )
+btnLeft.addEventListener( "click", (e) => previus(e) )
 
-function cargarImagen() {
+function uploadImage() {
     //background-image -> backgroundImage
-    img.style.backgroundImage = `url(${imgUrl[indiceImgActual]})`
+    img.style.backgroundImage = `url(${imgUrl[actualIndex]})`
 }
 
-function mostrarSiguiente(e){
-    if( indiceImgActual >= (imgUrl.length - 1) ){
-        indiceImgActual = 0
+function next(e){
+    if( actualIndex >= (imgUrl.length - 1) ){
+        actualIndex = 0
     }else{
-        indiceImgActual++
+        actualIndex++
     }
 
-    cargarImagen()
+    uploadImage()
     e.stopPropagation()
 }
 
-function mostrarAnterior(e) {
-    if( indiceImgActual <= 0 ){
-        indiceImgActual = imgUrl.length - 1
+function previus(e) {
+    if( actualIndex <= 0 ){
+        actualIndex = imgUrl.length - 1
     }else{
-        indiceImgActual--
+        actualIndex--
     }
 
-    cargarImagen()
+    uploadImage()
 
     e.stopPropagation()
 }
