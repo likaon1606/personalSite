@@ -1,3 +1,23 @@
+@font-face {
+  font-family: font-body;
+  src: url('./fonts/Gabarito-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: font-body;
+  src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'font-body';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'font-title';
+}
 
 //----------------------COLORS---------------------------------------
 
@@ -37,7 +57,6 @@ $blue4: #06283d;
 
   body {
     background-color: #f3fbff;
-    font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s ease all;
     &.dark {
       background-image: url(../assets/gifs/matrix.gif);
@@ -52,8 +71,8 @@ $blue4: #06283d;
     body.dark & {
       background: $darkGray;
     }
-    }
-   
+  }
+
   //-----------LOGO LEFT ROTATE-----------
   .logoLeft {
     text-align: center;
@@ -77,7 +96,7 @@ $blue4: #06283d;
     margin-left: 293px;
     margin-top: -30px;
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 20px;
       height: 20px;
@@ -144,9 +163,9 @@ $blue4: #06283d;
     overflow-y: hidden;
     left: -160px;
     transition: 0.5s;
-    body.dark &{
+    body.dark & {
       background: $darkGray;
-  }
+    }
   }
   .aside:hover {
     overflow-y: auto;
@@ -163,7 +182,7 @@ $blue4: #06283d;
       margin-left: 15px;
       list-style: none;
       font-weight: 900;
-      body.dark &{
+      body.dark & {
         color: white;
       }
     }
@@ -173,8 +192,8 @@ $blue4: #06283d;
 
   .window-pop-up {
     background: $blue4;
-    border-radius: 10PX;
-    padding: 10PX;
+    border-radius: 10px;
+    padding: 10px;
     position: absolute;
     margin-left: 43%;
     margin-right: 5%;
@@ -184,16 +203,16 @@ $blue4: #06283d;
     }
     & ul {
       list-style: none;
-      color: $blue0;  
+      color: $blue0;
     }
     & li {
       padding: 3px;
     }
   }
-  #close img{
+  #close img {
     width: 10%;
   }
-  
+
   //---------------------ABOUT ME---------------------------------------------------------------
   .node {
     text-align: center;
@@ -205,7 +224,7 @@ $blue4: #06283d;
   .container-view {
     display: flex;
     justify-content: center;
-    }
+  }
   .view {
     display: flex;
     width: 300px;
@@ -394,140 +413,138 @@ $blue4: #06283d;
     }
   }
 
-//------------------------------------------WORKS------------------------------------------------
+  //------------------------------------------WORKS------------------------------------------------
 
-.briefcaf {
-  text-align: center;
-  position: relative;
-  margin-top: 30px;
-  color: $blue3;
-  body.dark & {
-    color: white;
+  .briefcaf {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    color: $blue3;
+    body.dark & {
+      color: white;
+    }
   }
-}
-//---------------------------------cub--------------------------------------------------------------
-#containerCub {
-  margin-left: 20%;
-  perspective: 800px;
-  width: 200px;
-  margin-top: 50px;
-}
-#cub {
-  transform-style: preserve-3d;
-  width: 200px;
-  height: 200px;
-  // transform: rotateY(45deg);
-  & p {
+  //---------------------------------cub--------------------------------------------------------------
+  #containerCub {
+    margin-left: 20%;
+    perspective: 800px;
+    width: 200px;
+    margin-top: 50px;
+  }
+  #cub {
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    // transform: rotateY(45deg);
+    & p {
+      visibility: hidden;
+    }
+  }
+  .face {
+    position: absolute;
+    & img {
+      width: 100px;
+      height: 100px;
+      box-shadow: 3px 3px 5px 2px $lightGrayHover;
+    }
+  }
+  //FORM
+  .front {
+    transform: translateZ(50px);
+  }
+  //POKEAPI
+  .back {
+    transform: translateZ(-50px);
+  }
+  //RICK AND MORTY
+  .left {
+    transform: translateX(-50px) rotateY(90deg);
+  }
+  // POND HOUSE
+  .right {
+    transform: translateX(50px) rotateY(90deg);
+  }
+  //------------------------CAROUSEL---------------------------------------------
+
+  .carousel {
     visibility: hidden;
   }
-}
-.face {
-  position: absolute;
-  & img {
-    width: 100px;
-    height: 100px;
-    box-shadow: 3px 3px 5px 2px $lightGrayHover;
+
+  //------------------------form------------------------------------------------
+
+  .container-form {
+    margin-top: -12%;
+    & h1 {
+      text-align: center;
+      color: $blue3;
+      body.dark & {
+        color: white;
+      }
+    }
   }
-}
-//FORM
-.front {
-  transform: translateZ(50px); 
-}
-//POKEAPI
-.back {
-  transform: translateZ(-50px); 
-}
-//RICK AND MORTY
-.left {
-  transform: translateX(-50px) rotateY(90deg);
-}
-// POND HOUSE
-.right {
-  transform: translateX(50px) rotateY(90deg);
-}
-//------------------------CAROUSEL---------------------------------------------
 
-.carousel {
-  visibility: hidden;
-}
-
-
-//------------------------form------------------------------------------------
-
-.container-form {
-  margin-top: -12%;
-  & h1 {
+  .form {
+    margin-top: 40px;
+    position: relative;
+    margin: 10px;
     text-align: center;
-    color: $blue3;
+    background: $blue2;
+    border-radius: 10px;
     body.dark & {
-      color: white;
+      background: $darkGray;
+    }
+    & label {
+      display: block;
+      position: relative;
+      text-align: start;
+      margin-top: 10px;
+      padding: 10px;
+      body.dark & {
+        color: white;
+      }
+    }
+    & input {
+      position: relative;
+      margin-left: -5px;
+      padding: 5px;
+      width: 90%;
+    }
+    & textarea {
+      margin: 5px;
+      width: 92%;
+    }
+    & .btn {
+      position: relative;
+      background: $blue4;
+      color: $blue3;
+      width: 24%;
+      height: 10%;
+      padding: 5px;
+      font-size: 130%;
+      font-weight: 600;
+      margin: 15px;
+      body.dark & {
+        color: white;
+      }
     }
   }
-}
 
-.form {
-  margin-top: 40px;
-  position: relative;
-  margin: 10px;
-  text-align: center;
-  background: $blue2;
-  border-radius: 10px;
-  body.dark & {
-    background: $darkGray;
-  }
-  & label {
-    display: block;
-    position: relative;
-    text-align: start;
-    margin-top: 10px;
-    padding: 10px;
-    body.dark & {
-      color: white;
+  //---------------------------FOOTER---------------------------------------------------------------------
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    & p {
+      color: $blue4;
+      font-weight: 900;
+      text-shadow: -5px -8px 2px $blue2;
+      body.dark & {
+        color: white;
+        text-shadow: -5px -8px 2px $lightGrayHover;
+      }
     }
   }
-  & input {
-   position: relative;
-   margin-left: -5px;
-   padding: 5px;
-   width: 90%;
-  }
-  & textarea {
-    margin: 5px;
-    width: 92%;
-  }
-  & .btn {
-    position: relative;
-    background: $blue4;
-    color: $blue3;
-    width: 24%;
-    height: 10%;
-    padding: 5px;
-    font-size: 130%;
-    font-weight: 600;
-    margin: 15px;
-    body.dark & {
-      color: white;
-    }
-  }
-}
-
-//---------------------------FOOTER---------------------------------------------------------------------
-
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 100px;
-  & p {
-    color: $blue4;
-    font-weight: 900;
-  text-shadow: -5px -8px 2px $blue2;
-  body.dark & {
-    color: white;
-    text-shadow: -5px -8px 2px $lightGrayHover;
-  }
-  }
-}
-
 }
 //.....................................................................................
 //----------------------MEDIUM PHONE---------------------------------------------------
@@ -539,7 +556,7 @@ footer {
     margin-top: -9%;
   }
   .barsMenu {
-    top: -18%
+    top: -18%;
   }
   aside {
     width: 165px;
@@ -550,22 +567,21 @@ footer {
     margin-right: 1%;
   }
   .container-view {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
- .form {
-  & label {
-    margin-left: 1.5%;
+  .form {
+    & label {
+      margin-left: 1.5%;
+    }
   }
-}
-
 }
 //......................................................................................
 //------------------------BIG PHONE-----------------------------------------------------
 //......................................................................................
 
 @media only screen and (min-width: 375px) {
-  #containerCub{
+  #containerCub {
     margin-left: 25%;
   }
 }
@@ -573,12 +589,11 @@ footer {
   .view {
     width: 100%;
   }
-  .view .mask, .content {
-  width: 100%;
-  height: 100%;
-}
-
-
+  .view .mask,
+  .content {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media only screen and (min-width: 600px) {
   .switch {
@@ -632,7 +647,7 @@ footer {
       margin-top: 30px;
       font-size: 22px;
     }
-    &  a.info {
+    & a.info {
       margin-top: 30px;
       font-size: 30px;
     }
@@ -673,54 +688,52 @@ footer {
     margin-top: 10%;
   }
   //FORM
-.front {
-  transform: translateZ(100px); 
-}
-//POKEAPI
-.back {
-  transform: translateZ(-100px); 
-}
-//RICK AND MORTY
-.left {
-  transform: translateX(-100px) rotateY(90deg);
-}
-// POND HOUSE
-.right {
-  transform: translateX(100px) rotateY(90deg);
-}
-.container-form {
-  margin-top: 20%;
-  margin-left: 15%;
-  & h1 {
-    font-size: 200%;
-    margin-right: 12%;
+  .front {
+    transform: translateZ(100px);
   }
-  & .form {
-    margin-top: 5%;
-    width: 80%;
+  //POKEAPI
+  .back {
+    transform: translateZ(-100px);
   }
-  & label {
-    font-size: 150%;
+  //RICK AND MORTY
+  .left {
+    transform: translateX(-100px) rotateY(90deg);
   }
-  & input {
-    font-size: 130%;
+  // POND HOUSE
+  .right {
+    transform: translateX(100px) rotateY(90deg);
   }
-  & textarea {
-    font-size: 150%;
+  .container-form {
+    margin-top: 20%;
+    margin-left: 15%;
+    & h1 {
+      font-size: 200%;
+      margin-right: 12%;
+    }
+    & .form {
+      margin-top: 5%;
+      width: 80%;
+    }
+    & label {
+      font-size: 150%;
+    }
+    & input {
+      font-size: 130%;
+    }
+    & textarea {
+      font-size: 150%;
+    }
   }
-}
-
 }
 //......................................................................................
 //---------------------------TABLETS----------------------------------------------------
 //......................................................................................
 
-
 @media only screen and (min-width: 768px) {
   aside {
     margin-left: -10%;
   }
-  .view img{
+  .view img {
     margin-left: start;
     margin: 3px;
   }
@@ -732,7 +745,6 @@ footer {
       margin-left: 3%;
     }
   }
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -743,12 +755,10 @@ footer {
     height: 300px;
     align-items: start;
   }
-  .view img{
+  .view img {
     margin: 1px;
     height: 100%;
   }
- 
-
 }
 @media only screen and (min-width: 1024px) {
   .switch {
@@ -779,7 +789,7 @@ footer {
     margin-left: 70%;
   }
   #close img {
-    position: relative;  
+    position: relative;
   }
   .container-view {
     margin-left: -27%;
@@ -807,32 +817,30 @@ footer {
   #cub {
     margin-left: 50%;
     margin-top: -30%;
-  & img {
-    width: 300px;
-    height: 300px;
-  }
+    & img {
+      width: 300px;
+      height: 300px;
+    }
   }
   //FORM
-.front {
-  transform: translateZ(151px); 
-}
-//POKEAPI
-.back {
-  transform: translateZ(-151px); 
-}
-//RICK AND MORTY
-.left {
-  transform: translateX(-150px) rotateY(90deg);
-}
-// POND HOUSE
-.right {
-  transform: translateX(150px) rotateY(90deg);
-}
-.container-form {
-  margin-top: 25%;
-}
-
-
+  .front {
+    transform: translateZ(151px);
+  }
+  //POKEAPI
+  .back {
+    transform: translateZ(-151px);
+  }
+  //RICK AND MORTY
+  .left {
+    transform: translateX(-150px) rotateY(90deg);
+  }
+  // POND HOUSE
+  .right {
+    transform: translateX(150px) rotateY(90deg);
+  }
+  .container-form {
+    margin-top: 25%;
+  }
 }
 @media only screen and (min-width: 1280px) {
   aside {
@@ -843,7 +851,7 @@ footer {
       font-size: 200%;
     }
   }
-  .container-view{
+  .container-view {
     margin-left: -15%;
   }
   .view {
@@ -869,8 +877,6 @@ footer {
   .skills {
     margin: 30px;
   }
-
-
 }
 
 //---------------------------DESKTOP-----------------------------
@@ -882,7 +888,6 @@ footer {
   .container-view {
     margin-left: -22%;
   }
-
 }
 @media only screen and (min-width: 1600px) {
   .switch {
@@ -903,9 +908,9 @@ footer {
     }
     & li:hover {
       color: orangered;
-      body.dark &{
+      body.dark & {
         color: orangered;
-    }
+      }
     }
   }
   .view {
@@ -913,7 +918,7 @@ footer {
   }
   .window-pop-up {
     margin-left: 10%;
-    margin-right:65%;
+    margin-right: 65%;
     & ul {
       margin-top: -45px;
     }
@@ -941,8 +946,6 @@ footer {
       width: 50%;
       height: 97.5%;
     }
-   
-    
   }
   .icons {
     position: relative;
@@ -951,7 +954,7 @@ footer {
     width: 40%;
     & img {
       width: 9%;
-      margin:40px;
+      margin: 40px;
     }
     & img:hover {
       transform: scale(1.5);
@@ -967,7 +970,7 @@ footer {
       font-size: 200%;
     }
   }
-  .titleSkills{
+  .titleSkills {
     margin-top: 6%;
   }
   .skills {
@@ -981,19 +984,19 @@ footer {
     margin-left: 60%;
   }
   //---------------------CAROUSEL--------------------------------------------------
-  .carousel{
+  .carousel {
     margin-top: -12%;
     margin-left: 10%;
     visibility: visible;
     width: 500px;
     height: 300px;
-}
-.carousel .btn-wrapper{
-  display: flex;
-  justify-content: space-between;
-}
+  }
+  .carousel .btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-#img-carousel{
+  #img-carousel {
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -1001,12 +1004,13 @@ footer {
     background-repeat: no-repeat;
     box-shadow: 0px 0px 10px 2px $blue2;
     border-radius: 10px;
-}
-.btn-wrapper img:hover {
-  transform: scale(1.2);
-}
+  }
+  .btn-wrapper img:hover {
+    transform: scale(1.2);
+  }
 
-#left, #right{
+  #left,
+  #right {
     display: flex;
     position: absolute;
     margin-top: 500px;
@@ -1015,21 +1019,19 @@ footer {
     border-radius: 50%;
     margin: 10px;
     background-color: transparent;
-   & img:hover{
-    transform: scale(1.5);
-   }
-}
-#left {
-  margin-top: -.5%;
-  margin-left: -5%;
-}
-#right {
-  margin-top: -.5%;
-  margin-left: 32%;
-}
-.container-form {
-  margin-top: 5%;
-}
-
-
+    & img:hover {
+      transform: scale(1.5);
+    }
+  }
+  #left {
+    margin-top: -0.5%;
+    margin-left: -5%;
+  }
+  #right {
+    margin-top: -0.5%;
+    margin-left: 32%;
+  }
+  .container-form {
+    margin-top: 5%;
+  }
 }
